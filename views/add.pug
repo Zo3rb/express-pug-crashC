@@ -1,0 +1,10 @@
+extends layout/static.pug
+block content
+        .container-fluid
+            .row.py-5
+                .col-12.col-md-8.col-sm-12.offset-md-2.offset-sm-0
+                    form(action="/add", method="POST")
+                        .form-group
+                            label(for="product")
+                            input(type="text", name="title", placeholder="Enter The Product You Want to Add", id="product", class="form-control", autocomplete="off")
+                        button.btn.btn-dark(type="submit") Add Product
